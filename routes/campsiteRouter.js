@@ -3,8 +3,6 @@ const campsiteRouter = express.Router();
 const Campsite = require("../models/campsite");
 
 campsiteRouter.route("/");
-
-//Campsite router
 campsiteRouter
   .route("/")
   .get((req, res, next) => {
