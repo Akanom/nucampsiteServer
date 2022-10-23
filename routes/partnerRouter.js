@@ -99,7 +99,7 @@ partnerRouter
     cors.corsWithOptions,
     authenticate.verifyUser,
     authenticate.verifyAdmin,
-    
+
     (req, res, next) => {
       Partner.findByIdAndDelete(req.params.partnerId)
         .then((response) => {
